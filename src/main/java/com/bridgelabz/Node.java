@@ -6,9 +6,9 @@ public class Node <A,B extends Comparable> {
     Node next;
 
     public Node(A data , B value) {
-        this.data=data;
-        this.value=value;
-        this.next=null;
+        this.data = data;
+        this.value = value;
+        this.next = null;
     }
 
     public A getData() {
