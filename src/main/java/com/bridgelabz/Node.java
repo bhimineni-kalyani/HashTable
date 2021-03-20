@@ -31,7 +31,7 @@ public class Node <A,B extends Comparable> {
         return next;
     }
 
-    public static void setNext(Node<A, B> next) {
+    public void setNext(Node<A, B> next) {
         this.next = next;
     }
 
@@ -39,7 +39,7 @@ public class Node <A,B extends Comparable> {
     public String toString() {
         StringBuilder MapNodeString = new StringBuilder();
         MapNodeString.append("Map Node{" + "A=").append(data)
-                .append("B=").append(value).append('}');
+                     .append("B=").append(value).append('}');
         if (next != null)
             MapNodeString.append("->").append(next);
         return MapNodeString.toString();
